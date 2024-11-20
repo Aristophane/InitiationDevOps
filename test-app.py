@@ -1,14 +1,16 @@
 import unittest
 
 from app import multplication
-
+"""Calculatrice"""
 class TestStringMethods(unittest.TestCase):
 
-    def test_multiplicationTrue(self):
+    def testMultiplicationTrue(self):
+        """Test OK Calculatrice"""
         self.assertEqual(multplication(2,5), 10)
 
-    def test_multiplicationNotTrue(self):
+    def testMultiplicationNotTrue(self):
+        """Test KO Calculatrice"""
         self.assertNotEqual(multplication(2,5), 11)
-        
+
 if __name__ == '__main__':
     unittest.main()
